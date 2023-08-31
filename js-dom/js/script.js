@@ -3,84 +3,46 @@
 1. Изучить теорию
 2. Решить задачи:
 */
-/*
+
 // Задача №1.
 // Получить в переменную элемент с атрибутом data-say-hi
 // и прочитать значение этого атрибута
-<div data-say-hi="yes">Привет!</div>
+// <div data-say-hi="yes">Привет!</div>
+
+// const dataSayHi = document.querySelector("[data-say-hi]");
+// console.log(dataSayHi.dataset.sayHi);
 
 // Задача №2.
 // Получить в переменную элемент с текстом Йончи
-<ul>
+/* <ul>
 	<li>Корчи</li>
 	<li>Йончи</li>
-</ul>
+</ul> */
+
+// const li = document.querySelectorAll("ul > li");
+// console.log(li[li.length - 1]);
 
 // Задача №3.
 // Получить в переменную коллекцию элементов с классом like
-<div class="like"></div>
+/* <div class="like"></div>
 <div class="subscribe"></div>
-<div class="like subscribe"></div>
+<div class="like subscribe"></div> */
+
+// const likeElements = document.querySelectorAll(".like");
+// console.log(likeElements);
 
 // Задача №4.
 // Куда добавится <li>Текст</li> ?
 
 // JS
-const list = document.querySelectorAll('ul');
-list.insertAdjacentHTML(
-	'beforeend',
-	'<li>Текст</li>'
-);
+// const list = document.querySelectorAll("ul");
+// list[0].insertAdjacentHTML("beforeend", "<li>Текст</li>");
 
 // HTML
-<ul>
+/* <ul>
 	<li>Пункт №1</li>
-	<li>Пункт №2</li>
-</ul>
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<li>Пункт №2</li> // добавится под ним
+</ul> */
 
 //========================================================================================================================================================
 //========================================================================================================================================================
@@ -141,7 +103,6 @@ history.back();
 history.forward();
 */
 
-
 //=================
 
 //Alert
@@ -194,12 +155,12 @@ console.log(bodyElement);
 
 //------------------------------------------
 
-//Коллекция childNodes содержит список всех детей, 
+//Коллекция childNodes содержит список всех детей,
 //включая текстовые узлы.
 //const childNodes = bodyElement.childNodes;
 //console.log(childNodes);
 
-//Для проверки наличия дочерних узлов 
+//Для проверки наличия дочерних узлов
 //существует также специальная функция hasChildNodes()
 //console.log(bodyElement.hasChildNodes());
 
@@ -342,7 +303,6 @@ console.log(elemsNine);
 
 //--------------
 
-
 // querySelectorAll - статичная коллекция
 
 // Получение конкретного элемента коллекции
@@ -360,9 +320,7 @@ elems.forEach(item => {
 });
 */
 
-
 //--------------
-
 
 /*
 Искать можно не только в document
@@ -408,7 +366,6 @@ console.log(listItems);
 const lessonList = document.querySelector('.lesson__list');
 console.log(lessonList);
 */
-
 
 //---------------------
 
@@ -867,7 +824,7 @@ if (element.classList.contains('active')) {
 	console.log(`У element есть класс active!`);
 }*/
 
-//classList является перебираемым, поэтому можно 
+//classList является перебираемым, поэтому можно
 //перечислить все классы при помощи for..of
 /*
 for (let className of element.classList) {
@@ -956,7 +913,6 @@ const elementStyle = getComputedStyle(element);
 elementStyle.paddingLeft = "50px";
 */
 
-
 /*
 // Лайвхаки
 
@@ -994,7 +950,7 @@ element.style.marginLeft = "20px";
 
 //========================================================================================================================================================
 
-// Атрибуты и свойства 
+// Атрибуты и свойства
 
 /*
 У разных DOM-элементов могут быть разные свойства.
